@@ -2,3 +2,14 @@
 *.swp
 .DS_Store
 ._*.*
+.project
+.pydevproject
+.settings/
+*.pyc
+*.pyo
+*~
+*.db
+*.sqlite
+build/
+packed.min.*
+.webassets-cache/

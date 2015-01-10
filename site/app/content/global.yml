@@ -1,0 +1,12 @@
+site_desc: ""
+site_kw: kivy, python, ui framework
+header:
+    logo:
+        file: svg/kivy_logo.svg
+        url: /
+        desc: kivy logo
+    menu:
+        - text: button 1
+          url: "#"
+        - text: button 2
+          url: "#"

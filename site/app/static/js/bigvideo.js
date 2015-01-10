@@ -280,7 +280,7 @@
                 });
 
                 // add controls
-                if (settings.controls) initPlayControl();
+                //if (settings.controls) initPlayControl();
 
                 // set initial state
                 updateSize();

@@ -117,13 +117,22 @@ ul {
 
 
 
-.video-wrapper {
+.main-slide-wrapper {
     width: 100%;
     height: 100%;
+    position: relative;
+
+}
+
+.video-control {
+    color: #bdc3c7;
+    position: absolute;
+    right: 150px;
+    bottom: 100px;
 }
 
 .placeholder {
-    height: 1000px;
+    height: 200px;
 }
 
 

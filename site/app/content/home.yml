@@ -1,1 +1,9 @@
 page_title: Kivy Framework
+main_carousel:
+    - background:
+          type: video
+          media:
+              mp4: /static/vid/camera.mp4
+              webm: /static/vid/camera.webm
+              ogg: /static/vid/camera.ogv
+              image: /static/img/camera.jpg

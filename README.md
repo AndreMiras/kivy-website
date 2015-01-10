@@ -4,6 +4,9 @@ Website of kivy.org
 
 
 ##Dependencies
+
+Python 3.4 is recommended, the code is not tested with Python 2.7.
+
 ```
 pip install --upgrade Flask Frozen-Flask Flask-Assets pyyaml markdown cssutils
 ```

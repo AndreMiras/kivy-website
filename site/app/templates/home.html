@@ -1,6 +1,21 @@
 {% extends "layout.html" %}
 
 {%- block content %}
-        <div class="video-wrapper"></div>
-        <div class="placeholder"></div>
+        {%- for slide in c_page.main_carousel %}
+        <div class="main-slide-wrapper"
+            data-type="{{ slide.background.type }}"
+            data-image="{{ slide.background.media.image }}"
+        {%- if slide.background.type == 'video' %}
+            data-video-mp4="{{ slide.background.media.mp4 }}"
+            data-video-webm="{{ slide.background.media.webm }}"
+            data-video-ogg="{{ slide.background.media.ogg }}"
+        {%- endif -%}>
+        </div>
+
+        <div class="placeholder">
+        </div>
+
+        {% endfor %}
+
+
 {%- endblock content %}

@@ -95,9 +95,13 @@ $(window).load(function() {
         });
     }
 
-    theWindow.resize(updateBg).trigger("resize");
+    updateBg();
     updateBgMainSlide();
 
+    $(window).resize(function() {
+        updateBg();
+        setTimeout(updateBg, 500);
+    });
 
     $('.js-fouc').animate({'opacity': 1}, 100);
 

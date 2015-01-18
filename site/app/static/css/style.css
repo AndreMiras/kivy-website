@@ -100,6 +100,10 @@ ul {
     color: grey;
 }
 
+ul .slick-dots {
+    margin: 0;
+}
+
 .slick-dots li button:before {
     color: white;
     //opacity: 0.3;
@@ -114,38 +118,94 @@ ul {
 /* jquery slick end */
 
 
+.placeholder {
+    height: 1000px;
+}
+
 .main-carousel,
 .main-carousel .slick-list,
 .main-carousel .slick-track,
 .main-slide .vjs-tech,
 .main-slide .vjs-poster,
+.main-slide .container-fluid,
+.main-slide .row,
+.main-slide .main-slide-cont,
 .main-slide-bg {
     height: inherit;
-    width: inherit;
+    //width: inherit;
 }
 
 .main-carousel .slick-dots {
-    bottom: 8%;
-    left: 8%;
+    bottom: 3%;
+    left: 3%;
     text-align: left;
-    width: 50%;
+    width: 70%;
+    margin: 0;
+}
+
+.main-carousel .slick-dots li button:before,
+.main-carousel .slick-dots li.slick-active button:before {
+    font-size: 16px;
 }
 
 .video-control {
     color: #bdc3c7;
     position: absolute;
-    right: 10%;
-    bottom: 10%;
+    right: 5%;
+    bottom: 5%;
+    font-size: 16px;
+    z-index: 101;
 }
 
-.placeholder {
-    height: 200px;
+.main-slide-cont {
+    z-index: 100;
+    text-align: center;
+    display: table;
 }
 
+.main-slide-cont > div {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.main-slide-title {
+    font-weight: 900;
+    font-size: 250%;
+    color: white;
+    text-shadow: 1px 1px 0px rgba(150, 150, 150, 0.5);
+}
+
+.main-slide-desc {
+    font-weight: 500;
+    font-size: 150%;
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    text-shadow: 1px 1px 0px rgba(150, 150, 150, 0.5);
+}
+
+.main-slide-action {
+    font-weight: 700;
+    font-size: 130%;
+    padding-left: 50px;
+    padding-right: 50px;
+}
 
 
 /* tablets */
 @media (min-width : 768px) {
+
+    .main-slide-title {
+        font-size: 350%;
+    }
+    
+    .main-slide-desc {
+        font-size: 170%;
+    }
+    
+    .main-slide-action {
+        font-size: 150%;
+    }
 
 }
 
@@ -153,10 +213,27 @@ ul {
 /* medium desktops */
 @media (min-width : 992px) {
 
+    .main-slide-title {
+        font-size: 500%;
+    }
+    
+    .main-slide-desc {
+        font-size: 200%;
+    }
+    
+    .main-slide-action {
+        font-size: 180%;
+    }
+
 }
 
 
 /* large desktops */
 @media (min-width : 1200px) {
+
+    .main-slide-desc {
+        margin-top: 30px;
+        margin-bottom: 60px;
+    }
 
 }

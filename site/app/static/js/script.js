@@ -48,7 +48,7 @@ $(document).ready(function(){
         autoplaySpeed: 20000,
         infinite: true,
         waitForAnimate: false,
-        onInit: updateBgMainSlide,
+        //onInit: updateBgMainSlide,
         onBeforeChange: updateBgMainSlide,
     });
 
@@ -96,6 +96,7 @@ $(window).load(function() {
     }
 
     theWindow.resize(updateBg).trigger("resize");
+    updateBgMainSlide();
 
 
     $('.js-fouc').animate({'opacity': 1}, 100);

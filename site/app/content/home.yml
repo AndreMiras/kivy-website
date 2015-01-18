@@ -3,7 +3,25 @@ main_carousel:
     - background:
           type: video
           media:
-              mp4: /static/vid/camera.mp4
-              webm: /static/vid/camera.webm
-              ogg: /static/vid/camera.ogv
-              image: /static/img/camera.jpg
+              mp4: vid/camera.mp4
+              webm: vid/camera.webm
+              ogv: vid/camera.ogv
+              image: img/camera.jpg
+      title: Kivy Framework
+      text: >
+          Lorem ipsum dolor sit amet consectetur adipiscing elit sed do
+          eiusmod tempor incididunt ut labore et dolore
+      action:
+          text: Download
+          url: /download
+    - background:
+          type: image
+          media:
+              image: img/pigs.jpg
+      title: Kivy Framework
+      text: >
+          Lorem ipsum dolor sit amet consectetur adipiscing elit sed do
+          eiusmod tempor incididunt ut labore et dolore
+      action:
+          text: Download
+          url: /download

@@ -2,11 +2,21 @@ site_desc: ""
 site_kw: kivy, python, ui framework
 header:
     logo:
-        file: svg/kivy_logo.svg
+        file: svg/kivy_logo_light.svg
         url: /
         desc: kivy logo
     menu:
-        - text: button 1
+        - text: Download
           url: "#"
-        - text: button 2
+        - text: Gallery
+          url: "#"
+        - text: Contest
+          url: "#"
+        - text: Docs
+          url: "#"
+        - text: About
+          url: "#"
+        - text: Blog
+          url: "#"
+        - text: Donate
           url: "#"

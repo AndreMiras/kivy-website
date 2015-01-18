@@ -122,6 +122,16 @@ ul .slick-dots {
     height: 1000px;
 }
 
+.main-slide-tint {
+    background-color: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: inherit;
+    width: inherit;
+}
+
+.bg-wr,
 .main-carousel,
 .main-carousel .slick-list,
 .main-carousel .slick-track,
@@ -191,10 +201,73 @@ ul .slick-dots {
     padding-right: 50px;
 }
 
+/* header start */
+.navbar-brand {
+    padding: 0;
+    padding-left: 15px;
+    width: auto;
+    height: 50px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.navbar-brand img {
+    width: auto;
+    height: 50px;
+}
+
+.navbar-toggle {
+    margin-top: 23px;
+    margin-bottom: 23px;
+}
+
+.navbar-inverse {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.navbar {
+    border: none;
+}
+
+.nav li a {
+    margin-top: 20px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 180%;
+    font-weight: 700;
+    color: #BDC3C7;
+    text-shadow: 1px 1px 0px rgba(150, 150, 150, 0.5);
+}
+
+.navbar-nav > li > a:visited {
+    color: #ecf0f1;
+}
+
+.navbar-nav > li > a:hover,
+.navbar-nav > li > a:active,
+.navbar-nav > li > a.current {
+    color: white;
+}
+
+.navbar-nav > li > a.current {
+    font-weight: 900;
+}
+/* header end */
+
+
+
 
 /* tablets */
 @media (min-width : 768px) {
-
+    /* header start */
+    .nav > li > a {
+        //margin-left: 30px;
+        //margin-top: 40px;
+        //text-align: left;
+    }
+    .navbar {
+        //margin-bottom: 0;
+    }
+    /* header end */
     .main-slide-title {
         font-size: 350%;
     }
@@ -212,7 +285,19 @@ ul .slick-dots {
 
 /* medium desktops */
 @media (min-width : 992px) {
+    /* header start */
+    .navbar {
+        //margin-top: 15px;
+    }
 
+    .nav > li > a {
+        //margin-left: 50px;
+    }
+
+    .navbar-inverse .navbar-nav > li > a {
+        font-size: 220%;
+    }
+    /* header end */
     .main-slide-title {
         font-size: 500%;
     }
@@ -231,6 +316,11 @@ ul .slick-dots {
 /* large desktops */
 @media (min-width : 1200px) {
 
+    /* header start */
+    .nav > li > a {
+        //margin-left: 70px;
+    }
+    /* header end */
     .main-slide-desc {
         margin-top: 30px;
         margin-bottom: 60px;

@@ -1,5 +1,7 @@
 {% extends "layout.html" %}
 
+{% block body_attribs %} class="home"{% endblock body_attribs %}
+
 {%- block content %}
         <div class="main-carousel">
         {%- for slide in c_page.main_carousel %}

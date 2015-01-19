@@ -6,17 +6,20 @@ header:
         url: /
         desc: kivy logo
     menu:
+        - text: Projects
+          url: "/projects"
         - text: Download
-          url: "#"
+          url: "/download"
         - text: Gallery
-          url: "#"
+          url: "/gallery"
         - text: Contest
-          url: "#"
+          url: "/contest"
         - text: Docs
-          url: "#"
+          url: "/docs"
         - text: About
-          url: "#"
-        - text: Blog
-          url: "#"
+          url: "/about"
         - text: Donate
-          url: "#"
+          url: "/donate"
+        - text: Blog
+          url: "/blog"
+

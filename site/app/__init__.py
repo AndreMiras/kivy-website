@@ -12,7 +12,8 @@ def create_app(config_name):
     if not app.config['FROZEN_SITE']:
         from app.assets import assets
         assets.init_app(app)
-        from app.views import home
+        from app.views import home, download
         app.register_blueprint(home)
+        app.register_blueprint(download)
 
     return app

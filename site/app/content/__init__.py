@@ -72,4 +72,5 @@ c_global = load('global.yml')
 # Top level pages
 
 c_home = load('home.yml')
+c_download = load('download.yml')
 

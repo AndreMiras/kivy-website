@@ -63,30 +63,49 @@ $(document).ready(function(){
             player.pause();
         }
     });
-    
+
+    function setCurrentNav() {
+        $('.navbar-nav a, .footer-menu a').each(function () {
+            var href = this.href;
+            if (window.location.href.substring(0, href.length) === href) {
+                $(this).addClass('current');
+            }
+        });
+    }
+
+ // set navbar style and collapse it on scroll
+    $(window).scroll(function() {
+        if ($(".navbar").offset().top > 50) {
+            $(".navbar-fixed-top").addClass("scroll-nav-collapse");
+        } else {
+            $(".navbar-fixed-top").removeClass("scroll-nav-collapse");
+        }
+    }).trigger('scroll');
+
+    setCurrentNav();
+
 });
 
 
 $(window).load(function() {
 
     var theWindow = $(window),
-        $bg = $(".main-slide .vjs-tech, .main-slide .vjs-poster, .main-slide-bg"),
-        aspectRatio = $bg.width() / $bg.height();
+        $bg = $(".main-slide .vjs-tech, .main-slide .vjs-poster, .main-slide-bg");
 
-    function updateBg() {
-        if ( (theWindow.width() / theWindow.height()) < aspectRatio ) {
-            $bg.css({
-                'height': theWindow.height(),
-                'width': 'auto'
-                });
-        } else {
-            $bg.css({
-                'width': theWindow.width(),
-                'height': 'auto'
-                });
-        }
-
+    function updateSizePosBgMainSlide() {
         $bg.each(function() {
+            var aspectRatio = $(this).width() / $(this).height();
+            if ( (theWindow.width() / theWindow.height()) < aspectRatio ) {
+                $(this).css({
+                    'height': theWindow.height(),
+                    'width': 'auto'
+                    });
+            } else {
+                $(this).css({
+                    'width': theWindow.width(),
+                    'height': 'auto'
+                    });
+            }
             $(this).position({
                 my: 'center',
                 at: 'center',
@@ -95,13 +114,12 @@ $(window).load(function() {
         });
     }
 
-    updateBg();
     updateBgMainSlide();
 
     $(window).resize(function() {
-        updateBg();
-        setTimeout(updateBg, 500);
-    });
+        updateSizePosBgMainSlide();
+        setTimeout(updateSizePosBgMainSlide, 500);
+    }).trigger('resize');
 
     $('.js-fouc').animate({'opacity': 1}, 100);
 

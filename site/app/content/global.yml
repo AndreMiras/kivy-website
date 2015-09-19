@@ -12,8 +12,6 @@ header:
           url: "/download"
         - text: Gallery
           url: "/gallery"
-        - text: Contest
-          url: "/contest"
         - text: Docs
           url: "/docs"
         - text: About
@@ -22,4 +20,3 @@ header:
           url: "/donate"
         - text: Blog
           url: "/blog"
-

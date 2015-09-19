@@ -9,8 +9,7 @@ main_carousel:
               image: img/camera.jpg
       title: Kivy Framework
       text: >
-          Lorem ipsum dolor sit amet consectetur adipiscing elit sed do
-          eiusmod tempor incididunt ut labore et dolore
+          A Python library for making desktop and mobile application
       action:
           text: Download
           url: /download
@@ -20,8 +19,7 @@ main_carousel:
               image: img/pigs.jpg
       title: Kivy Framework
       text: >
-          Lorem ipsum dolor sit amet consectetur adipiscing elit sed do
-          eiusmod tempor incididunt ut labore et dolore
+          A Python library for making desktop and mobile application
       action:
           text: Download
           url: /download

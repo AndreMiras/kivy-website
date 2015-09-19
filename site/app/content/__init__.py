@@ -73,4 +73,4 @@ c_global = load('global.yml')
 
 c_home = load('home.yml')
 c_download = load('download.yml')
-
+c_donate = load('donate.yml')

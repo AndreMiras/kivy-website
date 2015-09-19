@@ -13,3 +13,4 @@
 build/
 packed.min.*
 .webassets-cache/
+python-env/
